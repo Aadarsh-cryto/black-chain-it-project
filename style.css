@@ -1,0 +1,216 @@
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: "gilroy";
+  box-sizing: border-box;
+ }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  #main{
+  min-height:100vh;
+    width: 100%;
+
+  }
+  #top{
+    width: 100%;
+    min-height: 60vh;
+    padding: 10px;
+    background-image: url(it.avif);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0dvw;  */
+    /* background-position: 50% 50%; 
+    width height  */
+    background-position: center;
+    background-size: 100% 100%;
+    
+  }
+  #overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    /* background-color: rgba(185, 165, 165, 0.411);  */
+  }
+  #text{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 120px; */
+    padding: 0 5vw;
+    bottom: 22%;
+    /* background-color: red;  */
+  }
+  #text h1{
+    font-size: 3vw;
+    font-weight: 800;
+    font-style: bold;
+    color: burlywood;
+  }
+  #textright {
+    width: 60%;
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  #textright p{
+    /* display: flex; */
+    font-size: 15px;
+    width: 40%;
+    color:burlywood;
+    font-weight: 900;
+    font-style: bold;
+
+  }
+  #textright i{ 
+    font-weight: 800;
+    background-color: burlywood;
+  }
+  #bottom{
+    width: 100%;
+    min-height: 40vh;
+    background-color: blue;
+    display: flex;
+  }
+  #b1{
+    width: 25%;
+    min-height: inherit;
+    background-color:#444;
+    
+  }
+  #b1 h1{
+    padding-top: 20px;
+    padding-left: 20px;
+    /* background-color: #444; */
+    color: burlywood;
+    font-weight: 800;
+    text-decoration: underline;
+  }
+  #b1  ol{
+  padding-top: 20px;
+  padding-left: 40px;
+  color: burlywood;
+  font-weight: 700;
+  font-size: 25px;
+   
+  }
+  #b2{
+    width: 25%;
+    min-height: inherit;
+    background-color: green;
+    background-image: url(b2.jpg); 
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  #b3{
+    width: 20%;
+    min-height: inherit; 
+    background-color: purple;
+  }
+  #b3top{
+    width: 100%;
+    min-height: 20vh; 
+    background-color: #444;
+    padding: 20px;
+  }
+  #b3top h3{
+    color: burlywood;
+    font-weight: 1000;
+    text-decoration: underline;
+  }
+  #b3top p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: burlywood;
+    font-weight: 400;
+    
+  }
+  #b3bottom{
+    width: 100%;
+    min-height: 20vh; 
+    background-color: gold;
+    background-image: url(company\ logo.png);
+    background-size: 100% 100%;
+
+  }
+  #b4{
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: burlywood;
+    padding: 30px;
+    
+  }
+  #b4 h1{
+    text-decoration: underline;
+  }
+  .notf{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    gap: 10px;
+  }
+  .notf p{
+    width: 800%;
+    padding-left: 50px;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    justify-content: center
+    ;
+  }
+  @media (max-width:500px) {
+    /* overlay div ke andar text div h  */
+    #overlay #text{
+      flex-direction: column;
+      /* flext start se left aa jyenge element  */
+      align-items: flex-start;
+
+    }
+    /* text ke andar textright h  */
+    #overlay #text #textright{
+      align-items: start;
+      flex-direction: column;
+      /* text absolute h isliye weidth hata diya  */
+
+    }
+    #overlay #text #textright p{
+      width: initial;
+      margin-top: 20px;  
+      font-size: 4vw;
+    }
+    #overlay #text #textright #icons{
+      margin-top: 30px;
+    }
+    #text h1{
+      font-size: 8.6vw;
+    }
+    #bottom{
+      flex-direction: column;
+    }
+    #b1{
+      width: 100%;
+    }
+    #b2{width: 100%
+    }
+    #b3{width: 100%
+    }
+    #b4{width: 100%
+    }
+    #b4 .notf #photo{
+      /* gap: 34px; */
+      padding-left: 2px;
+      /* margin-bottom: 20px; */
+      
+
+    }
+  }
